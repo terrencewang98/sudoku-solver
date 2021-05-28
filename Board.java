@@ -114,7 +114,7 @@ public class Board{
 	public int getSize(){
 		return board.length;
 	}
-
+	
 	public Board clone(){
 		int n = board.length;
 		int[][] arr = new int[n][n];

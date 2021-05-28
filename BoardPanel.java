@@ -42,7 +42,6 @@ public class BoardPanel extends JPanel{
 	public void solve(boolean threaded){
 		userInputComplete = true;
 		setBoard();
-		//board = TEST_2; 
 		SudokuSolver solver = new SudokuSolver();
 		long start = System.nanoTime();
 		Board boardObj = new Board(board);
@@ -171,7 +170,6 @@ public class BoardPanel extends JPanel{
         super.paintComponent(g);
         drawBoard(g);      
     }
-	
 
 	/*
 	FOR TESTING PURPOSES
@@ -197,5 +195,6 @@ public class BoardPanel extends JPanel{
 		{0,0,8,5,0,0,0,1,0},
 		{0,9,0,0,0,0,4,0,0}
 	};
+	
 	*/
 }

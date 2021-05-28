@@ -54,14 +54,6 @@ public class Cell{
 		}
 	}
 
-	public CellGroup getBlock(){
-		return block;
-	}
-
-	public void setBlock(CellGroup block){
-		this.block = block;
-	}
-
 	public int getValue(){
 		return value;
 	}
@@ -69,6 +61,14 @@ public class Cell{
 	public void setValue(int value){
 		possibleValues = new ArrayList<Integer>(Arrays.asList(value));
 		this.value = value;
+	}
+
+	public CellGroup getBlock(){
+		return block;
+	}
+
+	public void setBlock(CellGroup block){
+		this.block = block;
 	}
 	
 	@Override
@@ -82,10 +82,13 @@ public class Cell{
 
 	/*
 	FOR TESTING PURPOSES
+	
 	public void printPossibleValues(){
+		System.out.println("row: " + row + " col: " + col + " possible values:");
 		for(int value : possibleValues){
 			System.out.print(value + " ");
 		}
 		System.out.println();
-	}*/
+	}
+	*/
 }

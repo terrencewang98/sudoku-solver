@@ -168,7 +168,7 @@ public class SudokuSolver{
 	//if next cell has 0 possible values, board is incorrect
 	private Cell getNextCell(Board board){
 		Cell minCell = null;
-		int min = 9;
+		int min = 10;
 
 		for(int i = 0; i < board.getSize(); i++){
 
